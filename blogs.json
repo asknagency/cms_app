@@ -9,7 +9,7 @@
     "theme": "classic",
     "templatePath": "themes/classic/layout.html",
     "indexTemplatePath": "themes/classic/index.html",
-    "domain": "",
+    "domain": "https://asknagency.github.io/mycatech/",
     "mediaDomain": "",
     "ga4Id": "",
     "logo": ""
