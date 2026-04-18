@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1776546093249",
+    "name": "Mycatech - latest gossips, news, trending & much more",
+    "owner": "asknagency",
+    "repo": "mycatech",
+    "branch": "main",
+    "postsDir": "posts",
+    "theme": "classic",
+    "templatePath": "themes/classic/layout.html",
+    "indexTemplatePath": "themes/classic/index.html",
+    "domain": "",
+    "mediaDomain": "",
+    "ga4Id": "",
+    "logo": ""
+  }
+]
