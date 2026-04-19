@@ -15,7 +15,13 @@
       "domain": "https://asknagency.github.io/mycatech/",
       "mediaDomain": "",
       "ga4Id": "",
-      "logo": ""
+      "logo": "",
+      "templates": {
+        "index": "",
+        "layout": "",
+        "error404": ""
+      },
+      "themeId": "classic"
     }
   ],
   "themes": [
