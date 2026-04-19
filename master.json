@@ -45,7 +45,21 @@
     "topics": []
   },
   "registry": {
-    "drafts": [],
-    "posts": []
+    "drafts": [
+      {
+        "path": "drafts/how-wellnite-is-powering-a-mental-health-revolution-with-whereby.json",
+        "name": "how-wellnite-is-powering-a-mental-health-revolution-with-whereby.json",
+        "sha": "676587e4361f07e91d83ada34166aee1efa1409b",
+        "meta": {}
+      }
+    ],
+    "posts": [
+      {
+        "path": "published/how-wellnite-is-powering-a-mental-health-revolution-with-whereby.json",
+        "name": "how-wellnite-is-powering-a-mental-health-revolution-with-whereby.json",
+        "sha": "c621ffa6aa65f3d5f711feba0c073148a252b746",
+        "meta": {}
+      }
+    ]
   }
 }
