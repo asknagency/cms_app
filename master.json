@@ -28,22 +28,7 @@
     {
       "id": "classic",
       "name": "Classic (Default)",
-      "fontFamily": "system-ui, sans-serif",
-      "fonts": [],
-      "colors": {
-        "primary": "#14b8a6",
-        "surface": "#ffffff",
-        "text": "#333333"
-      },
-      "variables": [],
-      "plugins": [
-        "@tailwindcss/typography",
-        "tailwindcss-motion",
-        "tailwindcss-animate"
-      ],
-      "customCss": "",
-      "layoutPath": "themes/classic/layout.html",
-      "indexPath": "themes/classic/index.html"
+      "styleMap": {}
     }
   ],
   "taxonomy": {
