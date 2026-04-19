@@ -59,13 +59,6 @@
         "meta": {}
       }
     ],
-    "posts": [
-      {
-        "path": "published/how-wellnite-is-powering-a-mental-health-revolution-with-whereby.json",
-        "name": "how-wellnite-is-powering-a-mental-health-revolution-with-whereby.json",
-        "sha": "c621ffa6aa65f3d5f711feba0c073148a252b746",
-        "meta": {}
-      }
-    ]
+    "posts": []
   }
 }
