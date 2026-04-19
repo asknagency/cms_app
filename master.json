@@ -1,13 +1,72 @@
 {
-  "version": "2.4",
+  "version": "1.6",
   "authors": [],
-  "targets": [],
-  "themes": [],
+  "targets": [
+    {
+      "id": "1776546093249",
+      "name": "Mycatech - latest gossips, news, trending & much more",
+      "owner": "asknagency",
+      "repo": "mycatech",
+      "branch": "main",
+      "postsDir": "posts",
+      "theme": "classic",
+      "templatePath": "themes/classic/layout.html",
+      "indexTemplatePath": "themes/classic/index.html",
+      "domain": "https://asknagency.github.io/mycatech/",
+      "mediaDomain": "",
+      "ga4Id": "",
+      "logo": "",
+      "templates": {
+        "index": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My Tech Blog | Home</title>\n    <meta name=\"description\" content=\"Latest articles and thoughts.\">\n    <link rel=\"stylesheet\" href=\"/style.css\">\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-50 text-gray-900 font-sans antialiased\">\n    <nav class=\"bg-white shadow-sm py-4 px-6 mb-8 flex justify-between items-center max-w-4xl mx-auto rounded-b-lg\">\n        <a href=\"/\" class=\"font-bold text-xl text-teal-600\">My Blog</a>\n        <a href=\"/rss.xml\" class=\"text-sm text-gray-500 hover:text-teal-600\">RSS Feed</a>\n    </nav>\n\n    <header class=\"max-w-4xl mx-auto text-center py-12 mb-8\">\n        <h1 class=\"text-5xl font-extrabold tracking-tight text-gray-900 mb-4\">Latest Writings</h1>\n        <p class=\"text-xl text-gray-600\">Insights on technology, coding, and design.</p>\n    </header>\n\n    <main class=\"max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-12\" id=\"post-grid\">\n        <div class=\"p-8 text-center text-gray-500 col-span-2\">Loading posts...</div>\n    </main>\n\n    <footer class=\"text-center py-8 text-sm text-gray-500 border-t max-w-4xl mx-auto\">\n        &copy; 2024 My Tech Blog. Generated statically.\n    </footer>\n\n    <script>\n        // Fetch the generated registry index to display posts\n        fetch('/posts.json')\n            .then(res => res.json())\n            .then(posts => {\n                const grid = document.getElementById('post-grid');\n                if(!posts || posts.length === 0) {\n                    grid.innerHTML = '<div class=\"p-8 text-center text-gray-500 col-span-2\">No posts published yet.</div>';\n                    return;\n                }\n                \n                // Sort by date descending\n                posts.sort((a, b) => new Date(b.date) - new Date(a.date));\n                \n                grid.innerHTML = posts.map(post => {\n                    const slug = post.title.toLowerCase().trim().replace(/[\\s\\W-]+/g, '-');\n                    const img = post.featuredImage ? `<img src=\"${post.featuredImage}\" class=\"w-full h-48 object-cover rounded-t-xl\">` : '';\n                    return `\n                        <article class=\"bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex flex-col h-full\">\n                            ${img}\n                            <div class=\"p-6 flex flex-col flex-1\">\n                                <time class=\"text-xs font-bold text-teal-600 uppercase tracking-wider mb-2\">${new Date(post.date).toLocaleDateString()}</time>\n                                <h2 class=\"text-2xl font-bold mb-3 line-clamp-2\"><a href=\"/posts/${slug}.html\" class=\"hover:text-teal-600\">${post.title}</a></h2>\n                                <p class=\"text-gray-600 mb-4 line-clamp-3 flex-1\">${post.seoDescription || 'Read more about this topic in the full article...'}</p>\n                                <a href=\"/posts/${slug}.html\" class=\"font-medium text-teal-600 hover:underline\">Read Article &rarr;</a>\n                            </div>\n                        </article>\n                    `;\n                }).join('');\n            }).catch(e => {\n                document.getElementById('post-grid').innerHTML = '<div class=\"p-8 text-center text-red-500 col-span-2\">Failed to load posts.</div>';\n            });\n    </script>\n</body>\n</html>",
+        "layout": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    \n    {{ postMeta }}\n    \n    <link rel=\"stylesheet\" href=\"/style.css\">\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <style>\n        .npm-media-block img { max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem auto; }\n        .npm-media-block iframe { width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem; margin: 1rem 0; }\n    </style>\n</head>\n<body class=\"bg-gray-50 text-gray-900 font-sans antialiased\">\n    <nav class=\"bg-white shadow-sm py-4 px-6 mb-8 flex justify-between items-center max-w-4xl mx-auto rounded-b-lg\">\n        <a href=\"/\" class=\"font-bold text-xl text-teal-600\">My Blog</a>\n        <a href=\"/rss.xml\" class=\"text-sm text-gray-500 hover:text-teal-600\">RSS Feed</a>\n    </nav>\n\n    <main class=\"max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-sm mb-12\">\n        <article class=\"prose prose-teal max-w-none\">\n            <header class=\"mb-8 border-b pb-6\">\n                <h1 class=\"text-4xl font-extrabold tracking-tight mb-4\">{{ title }}</h1>\n                <div class=\"flex items-center text-sm text-gray-500\">\n                    <time datetime=\"{{ date }}\">{{ date }}</time>\n                </div>\n            </header>\n            \n            <div class=\"post-body\">\n                {{ content }}\n            </div>\n        </article>\n    </main>\n\n    <footer class=\"text-center py-8 text-sm text-gray-500\">\n        &copy; 2024 My Tech Blog. Generated statically.\n    </footer>\n</body>\n</html>",
+        "error404": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Page Not Found</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n</head>\n<body class=\"bg-gray-50 text-gray-900 font-sans antialiased flex flex-col items-center justify-center min-h-screen\">\n    <h1 class=\"text-9xl font-extrabold text-gray-200\">404</h1>\n    <h2 class=\"text-3xl font-bold mt-4 mb-2\">Page Not Found</h2>\n    <p class=\"text-gray-500 mb-8\">The article or page you are looking for does not exist.</p>\n    <a href=\"/\" class=\"px-6 py-3 bg-teal-600 text-white font-bold rounded-lg hover:bg-teal-700 transition-colors\">Return Home</a>\n</body>\n</html>"
+      },
+      "themeId": "classic"
+    }
+  ],
+  "themes": [
+    {
+      "id": "classic",
+      "name": "Classic (Default)",
+      "styleMap": {
+        "--primary": "#9e1b1b"
+      }
+    }
+  ],
   "taxonomy": {
-    "categories": [],
-    "topics": []
+    "categories": [
+      {
+        "id": "category-62dd22ba-63d1-41ba-b238-194acd40aae2",
+        "title": "News",
+        "slug": "news",
+        "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><rect width=\"40\" height=\"40\" rx=\"8\"/></svg>"
+      }
+    ],
+    "topics": [
+      {
+        "id": "topic-2647485e-3f23-4ac8-9dd1-05868316e1c3",
+        "name": "War",
+        "slug": "war",
+        "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><circle cx=\"20\" cy=\"20\" r=\"16\"/></svg>",
+        "title": "War"
+      },
+      {
+        "id": "topic-eb14cab3-3699-4587-b347-33915d821515",
+        "title": "Donald Trump",
+        "slug": "donald-trump",
+        "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><circle cx=\"20\" cy=\"20\" r=\"16\"/></svg>"
+      }
+    ]
   },
   "registry": {
+    "drafts": [
+      {
+        "path": "drafts/how-wellnite-is-powering-a-mental-health-revolution-with-whereby.json",
+        "name": "how-wellnite-is-powering-a-mental-health-revolution-with-whereby.json",
+        "sha": "676587e4361f07e91d83ada34166aee1efa1409b",
+        "meta": {}
+      }
+    ],
     "posts": []
   }
 }
