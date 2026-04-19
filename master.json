@@ -60,7 +60,8 @@
         "id": "topic-2647485e-3f23-4ac8-9dd1-05868316e1c3",
         "name": "War",
         "slug": "war",
-        "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><circle cx=\"20\" cy=\"20\" r=\"16\"/></svg>"
+        "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><circle cx=\"20\" cy=\"20\" r=\"16\"/></svg>",
+        "title": "War"
       },
       {
         "id": "topic-eb14cab3-3699-4587-b347-33915d821515",
