@@ -47,7 +47,14 @@
     }
   ],
   "taxonomy": {
-    "categories": [],
+    "categories": [
+      {
+        "id": "category-62dd22ba-63d1-41ba-b238-194acd40aae2",
+        "title": "News",
+        "slug": "news",
+        "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><rect width=\"40\" height=\"40\" rx=\"8\"/></svg>"
+      }
+    ],
     "topics": [
       {
         "id": "topic-2647485e-3f23-4ac8-9dd1-05868316e1c3",
