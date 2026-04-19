@@ -1,0 +1,51 @@
+{
+  "version": "1.6",
+  "authors": [],
+  "targets": [
+    {
+      "id": "1776546093249",
+      "name": "Mycatech - latest gossips, news, trending & much more",
+      "owner": "asknagency",
+      "repo": "mycatech",
+      "branch": "main",
+      "postsDir": "posts",
+      "theme": "classic",
+      "templatePath": "themes/classic/layout.html",
+      "indexTemplatePath": "themes/classic/index.html",
+      "domain": "https://asknagency.github.io/mycatech/",
+      "mediaDomain": "",
+      "ga4Id": "",
+      "logo": ""
+    }
+  ],
+  "themes": [
+    {
+      "id": "classic",
+      "name": "Classic (Default)",
+      "fontFamily": "system-ui, sans-serif",
+      "fonts": [],
+      "colors": {
+        "primary": "#14b8a6",
+        "surface": "#ffffff",
+        "text": "#333333"
+      },
+      "variables": [],
+      "plugins": [
+        "@tailwindcss/typography",
+        "tailwindcss-motion",
+        "tailwindcss-animate"
+      ],
+      "customCss": "",
+      "layoutPath": "themes/classic/layout.html",
+      "indexPath": "themes/classic/index.html"
+    }
+  ],
+  "taxonomy": {
+    "categories": [],
+    "topics": []
+  },
+  "registry": {
+    "drafts": [],
+    "posts": []
+  }
+}
