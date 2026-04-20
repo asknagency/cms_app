@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <meta name="description" content="{{seoDescription}}">
+    <link rel="canonical" href="{{canonicalUrl}}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    
+    
+    {{head_inject}}
+</head>
+<body class="bg-brand-surface text-brand-text antialiased selection:bg-brand-primary selection:text-white font-sans">
+
+    <header class="gsap-header sticky top-0 z-50 bg-brand-surface/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="/" id="layout-logo" class="font-serif text-2xl font-bold tracking-tight text-brand-text skeleton-text">Whereby</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="/" id="layout-home" class="text-brand-text hover:opacity-80 skeleton-text">Home</a>
+                <a href="#" class="text-brand-text hover:opacity-80 flex items-center gap-1 skeleton-text">Product <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                <a href="#" class="text-brand-text hover:opacity-80 skeleton-text">Support</a>
+                <a href="#" class="bg-brand-primary text-white px-5 py-2.5 rounded-lg hover:opacity-90 transition-colors skeleton-text">Try for free</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <article class="gsap-content prose prose-lg">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold leading-tight mb-8 skeleton-text">{{title}}</h1>
+            {{content}}
+        </article>
+    </main>
+
+    <footer class="gsap-footer border-t border-gray-200 mt-12 bg-brand-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
+                <div>
+                    <h4 class="font-serif font-semibold text-brand-text mb-6 text-lg skeleton-text">About</h4>
+                    <ul class="space-y-4 text-brand-text opacity-80">
+                        <li><a href="#" class="hover:text-brand-primary transition-colors skeleton-text">About us</a></li>
+                        <li><a href="#" class="hover:text-brand-primary transition-colors skeleton-text">Our vision</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const pathParts = window.location.pathname.split('/').filter(p => p !== '');
+            if (pathParts.length >= 2) {
+                const isSubpath = pathParts.length > 2; 
+                const rootPath = isSubpath ? `/${pathParts[0]}/` : '/';
+                document.getElementById('layout-logo').href = rootPath;
+                document.getElementById('layout-home').href = rootPath;
+            }
+
+            if(window.gsap) {
+                gsap.fromTo(".gsap-header", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" });
+                gsap.fromTo(".gsap-content", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, delay: 0.2, ease: "power3.out" });
+            } else {
+                window.addEventListener('load', () => {
+                    gsap.fromTo(".gsap-header", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" });
+                    gsap.fromTo(".gsap-content", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, delay: 0.2, ease: "power3.out" });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
