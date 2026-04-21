@@ -11,7 +11,14 @@
         "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><rect width=\"40\" height=\"40\" rx=\"8\"/></svg>"
       }
     ],
-    "topics": []
+    "topics": [
+      {
+        "id": "topic-e6f196b7-2761-434a-a3fd-394c593ae6e7",
+        "title": "Trump",
+        "slug": "trump",
+        "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><circle cx=\"20\" cy=\"20\" r=\"16\"/></svg>"
+      }
+    ]
   },
   "settings": {
     "compilerEndpoint": "",
