@@ -1,7 +1,33 @@
 {
   "authors": [],
   "targets": [],
-  "themes": [],
+  "themes": [
+    {
+      "id": "theme-12177b73-6cda-4e88-a73a-ea79069f64e8",
+      "name": "classic",
+      "styleMap": {
+        "--theme-primary": "#14b8a6",
+        "--theme-surface": "#ffffff",
+        "--theme-font": "Inter, sans-serif"
+      },
+      "files": [
+        {
+          "name": "index.html",
+          "path": "themes/classic/index.html"
+        },
+        {
+          "name": "layout.html",
+          "path": "themes/classic/layout.html"
+        },
+        {
+          "name": "404.html",
+          "path": "themes/classic/404.html"
+        }
+      ],
+      "customCss": "",
+      "compiledCss": "themes/classic/style.css"
+    }
+  ],
   "taxonomy": {
     "categories": [],
     "topics": []
