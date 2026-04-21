@@ -1,13 +1,22 @@
 {
-  "version": "3.0",
-  "targets": [],
   "authors": [],
+  "targets": [],
   "themes": [],
   "taxonomy": {
-    "categories": [],
+    "categories": [
+      {
+        "id": "category-126c4d8d-b5fe-48d7-b019-2f657d2c2897",
+        "title": "Sports",
+        "slug": "sports",
+        "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><rect width=\"40\" height=\"40\" rx=\"8\"/></svg>"
+      }
+    ],
     "topics": []
   },
   "settings": {
+    "compilerEndpoint": "",
+    "imageTransformEndpoint": "/api/transform",
     "theme_mode": "light"
-  }
+  },
+  "version": "3.0"
 }
