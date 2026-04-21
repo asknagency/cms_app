@@ -1,5 +1,13 @@
 {
-  "authors": [],
+  "authors": [
+    {
+      "id": "author-0426fe80-754b-40c5-9c38-5f54975aa85d",
+      "name": "David Alaba",
+      "email": "dave3988@gmall.com",
+      "image": "https://picsum.photos/800/600?5",
+      "bio": "A writer with flair."
+    }
+  ],
   "targets": [],
   "themes": [
     {
