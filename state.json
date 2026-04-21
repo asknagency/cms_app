@@ -1,0 +1,14 @@
+{
+  "version": "3.0",
+  "targets": [],
+  "authors": [],
+  "themes": [],
+  "taxonomy": {
+    "categories": [],
+    "topics": []
+  },
+  "settings": {
+    "compilerEndpoint": "",
+    "imageTransformEndpoint": "/api/transform"
+  }
+}
