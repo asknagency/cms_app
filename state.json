@@ -1,14 +1,14 @@
 {
-  "version": "3.0",
-  "targets": [],
   "authors": [],
+  "targets": [],
   "themes": [],
   "taxonomy": {
     "categories": [],
     "topics": []
   },
   "settings": {
-    "compilerEndpoint": "",
-    "imageTransformEndpoint": "/api/transform"
-  }
+    "compilerEndpoint": "https://mnm8r2-3000.csb.app/api/compile",
+    "imageTransformEndpoint": "https://mnm8r2-3000.csb.app/api/transform"
+  },
+  "version": "3.0"
 }
