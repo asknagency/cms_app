@@ -1,20 +1,6 @@
 {
   "authors": [],
-  "targets": [
-    {
-      "id": "target-ce90f56b-d972-42b4-a4c2-3b13d289dc1f",
-      "name": "Myca Tech Blog",
-      "owner": "asknagency",
-      "repo": "mycatech",
-      "branch": "main",
-      "postsDir": "posts",
-      "domain": "https://asknagency.github.io/mycatech/",
-      "themeId": "theme-1764520b-d6b2-42fe-a3eb-88682e393913",
-      "isInitialized": false,
-      "created_at": "2026-04-22T10:04:15.632Z",
-      "modified_at": "2026-04-22T10:12:23.095Z"
-    }
-  ],
+  "targets": [],
   "themes": [
     {
       "id": "theme-1764520b-d6b2-42fe-a3eb-88682e393913",
