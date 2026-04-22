@@ -1,15 +1,14 @@
 {
-  "version": "3.3",
-  "targets": [],
   "authors": [],
+  "targets": [],
   "themes": [],
   "taxonomy": {
     "categories": [],
     "topics": []
   },
   "settings": {
-    "compilerEndpoint": "",
-    "imageTransformEndpoint": "/api/transform"
+    "compilerEndpoint": "https://mnm8r2-3000.csb.app/api/compile",
+    "imageTransformEndpoint": "https://mnm8r2-3000.csb.app/api/transform"
   },
   "stats": {
     "totalPosts": 0,
@@ -17,5 +16,6 @@
     "totalCategories": 0,
     "totalTopics": 0,
     "lastActivity": null
-  }
+  },
+  "version": "3.3"
 }
