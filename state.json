@@ -1,0 +1,21 @@
+{
+  "version": "3.3",
+  "targets": [],
+  "authors": [],
+  "themes": [],
+  "taxonomy": {
+    "categories": [],
+    "topics": []
+  },
+  "settings": {
+    "compilerEndpoint": "",
+    "imageTransformEndpoint": "/api/transform"
+  },
+  "stats": {
+    "totalPosts": 0,
+    "totalAuthors": 0,
+    "totalCategories": 0,
+    "totalTopics": 0,
+    "lastActivity": null
+  }
+}
