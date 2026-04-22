@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Whereby</title>
+    <meta name="description" content="Discover the latest insights, tips, and news on remote work, productivity, and team collaboration from the Whereby team.">
+    
+    <link rel="stylesheet" href="/style.css">
+    {{head_inject}}
+    {{cms_data}}
+</head>
+<body class="bg-brand-surface text-brand-text antialiased selection:bg-brand-primary selection:text-white font-sans">
+
+    <header class="gsap-header sticky top-0 z-50 bg-brand-surface/95 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="/" class="font-serif text-2xl font-bold tracking-tight text-brand-text skeleton-text">Whereby</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="/" class="text-brand-text hover:opacity-80 skeleton-text">Home</a>
+                <a href="#" class="text-brand-text hover:opacity-80 flex items-center gap-1 skeleton-text">Product <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></a>
+                <a href="#" class="text-brand-text hover:opacity-80 skeleton-text">Support</a>
+                <a href="#" class="bg-brand-primary text-white px-5 py-2.5 rounded-lg hover:opacity-90 transition-colors skeleton-text">Try for free</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="gsap-subnav border-b border-gray-200" id="category-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex gap-8 overflow-x-auto no-scrollbar py-4 text-sm font-medium text-brand-text/60 whitespace-nowrap" id="filter-container">
+                <button onclick="filterPosts('')" class="text-brand-text border-b-2 border-brand-text pb-4 -mb-4 filter-btn skeleton-text" data-cat="">All</button>
+            </nav>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div id="post-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+        </div>
+    </main>
+
+    <footer class="gsap-footer border-t border-gray-200 mt-12 bg-brand-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
+                <div>
+                    <h4 class="font-serif font-semibold text-brand-text mb-6 text-lg skeleton-text">About</h4>
+                    <ul class="space-y-4 text-brand-text opacity-80">
+                        <li><a href="#" class="hover:text-brand-primary transition-colors skeleton-text">About us</a></li>
+                        <li><a href="#" class="hover:text-brand-primary transition-colors skeleton-text">Our vision</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cmsData = document.getElementById('cms-blog-data') 
+                            ? JSON.parse(document.getElementById('cms-blog-data').textContent) 
+                            : { recent: [], featured: [], categories: [], siteMeta: {} };
+            
+            const allPosts = cmsData.recent || [];
+            const categories = cmsData.categories || [];
+            const postsDir = cmsData.siteMeta?.postsDir || 'posts';
+            
+            const grid = document.getElementById('post-grid');
+            const filterContainer = document.getElementById('filter-container');
+
+            categories.forEach(cat => {
+                const btn = document.createElement('button');
+                btn.className = "hover:text-brand-text transition-colors pb-4 -mb-4 filter-btn skeleton-text";
+                btn.textContent = cat.name;
+                btn.setAttribute('data-cat', cat.id);
+                btn.onclick = () => filterPosts(cat.id);
+                filterContainer.appendChild(btn);
+            });
+
+            window.filterPosts = (catId) => {
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    if (btn.getAttribute('data-cat') === catId) {
+                        btn.classList.add('text-brand-text', 'border-b-2', 'border-brand-text');
+                    } else {
+                        btn.classList.remove('text-brand-text', 'border-b-2', 'border-brand-text');
+                    }
+                });
+
+                const filtered = catId ? allPosts.filter(p => p.categories && p.categories.includes(catId)) : allPosts;
+                renderGrid(filtered);
+            };
+
+            function renderGrid(posts) {
+                if (posts.length === 0) {
+                    grid.innerHTML = `<div class="col-span-full py-12 text-center text-brand-text opacity-60 font-medium skeleton-text">No posts found.</div>`;
+                    return;
+                }
+
+                grid.innerHTML = posts.map((post, index) => {
+                    const postUrl = `${postsDir}/${post.slug}.html`;
+
+                    if (index === 0 && posts.length > 2) {
+                        return `
+                        <article class="gsap-card group cursor-pointer lg:col-span-2 relative flex flex-col justify-end min-h-[400px] rounded-xl overflow-hidden shadow-sm" onclick="window.location.href='${postUrl}'">
+                            <img src="${post.featuredImage || 'https://via.placeholder.com/1200x800?text=No+Image'}" alt="${post.title}" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                            <div class="relative p-8 text-white z-10">
+                                <h2 class="font-serif text-3xl md:text-5xl leading-tight mb-4 group-hover:text-gray-200 transition-colors skeleton-text">${post.title}</h2>
+                                <p class="text-sm text-gray-300 font-medium skeleton-text">${new Date(post.date).toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
+                            </div>
+                        </article>`;
+                    }
+
+                    return `
+                    <article class="gsap-card group cursor-pointer flex flex-col" onclick="window.location.href='${postUrl}'">
+                        <div class="img-container rounded-xl mb-4 aspect-video bg-gray-100">
+                            <img src="${post.featuredImage || 'https://via.placeholder.com/800x450?text=No+Image'}" alt="${post.title}" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-xs text-brand-text opacity-60 font-medium mb-2 uppercase tracking-wide skeleton-text">${new Date(post.date).toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}</p>
+                        <h3 class="font-serif text-xl font-semibold mb-2 group-hover:text-brand-primary transition-colors skeleton-text">${post.title}</h3>
+                        <p class="text-sm text-brand-text/80 line-clamp-3 skeleton-text">${post.seoDescription || ''}</p>
+                    </article>`;
+                }).join('');
+
+                if (window.gsap && window.ScrollTrigger) {
+                    initAnimations();
+                } else {
+                    window.addEventListener('load', initAnimations);
+                }
+            }
+
+            function initAnimations() {
+                if(!window.gsap) return;
+                gsap.registerPlugin(ScrollTrigger);
+                ScrollTrigger.getAll().forEach(t => t.kill());
+
+                const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+                tl.fromTo(".gsap-header", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 })
+                  .fromTo(".gsap-subnav", { y: -10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, "-=0.4");
+
+                const cards = gsap.utils.toArray('.gsap-card');
+                cards.forEach((card) => {
+                    gsap.fromTo(card, 
+                        { y: 40, opacity: 0 },
+                        {
+                            y: 0, opacity: 1, duration: 0.8, ease: "power2.out",
+                            scrollTrigger: { trigger: card, start: "top 85%", toggleActions: "play none none none" }
+                        }
+                    );
+                });
+            }
+
+            renderGrid(allPosts);
+        });
+    </script>
+</body>
+</html>
