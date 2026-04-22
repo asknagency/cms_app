@@ -26,6 +26,34 @@
       ],
       "customCss": "",
       "compiledCss": "themes/classic/style.css"
+    },
+    {
+      "id": "theme-84f2af8c-04db-4c34-89f7-e97acb96c055",
+      "name": "meon",
+      "fontUrl": "",
+      "styleMap": {
+        "--theme-primary": "#5937c9",
+        "--theme-surface": "#ffffff",
+        "--theme-font": "Inter, sans-serif"
+      },
+      "files": [
+        {
+          "name": "index.html",
+          "path": "themes/meon/index.html"
+        },
+        {
+          "name": "layout.html",
+          "path": "themes/meon/layout.html"
+        },
+        {
+          "name": "404.html",
+          "path": "themes/meon/404.html"
+        }
+      ],
+      "customCss": "",
+      "compiledCss": "themes/meon/style.css",
+      "created_at": "2026-04-22T01:43:29.649Z",
+      "modified_at": "2026-04-22T01:43:29.649Z"
     }
   ],
   "taxonomy": {
@@ -35,6 +63,15 @@
   "settings": {
     "compilerEndpoint": "https://mnm8r2-3000.csb.app/api/compile",
     "imageTransformEndpoint": "https://mnm8r2-3000.csb.app/api/transform"
+  },
+  "stats": {
+    "totalPosts": 0,
+    "totalAuthors": 0,
+    "totalCategories": 0,
+    "totalTopics": 0,
+    "totalThemes": 2,
+    "lastActivity": "2026-04-22T01:43:29.649Z",
+    "orphanedTopics": 0
   },
   "version": "3.0"
 }
