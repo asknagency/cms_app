@@ -21,8 +21,8 @@
     "topics": []
   },
   "settings": {
-    "compilerEndpoint": "",
-    "imageTransformEndpoint": "/api/transform"
+    "compilerEndpoint": "https://mnm8r2-3000.csb.app/api/compile",
+    "imageTransformEndpoint": "https://mnm8r2-3000.csb.app/api/transform"
   },
   "stats": {
     "totalPosts": 0,
