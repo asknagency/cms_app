@@ -1,6 +1,19 @@
 {
   "authors": [],
-  "targets": [],
+  "targets": [
+    {
+      "id": "target-776e89d5-11a2-4b8c-9b17-a4d23e404729",
+      "name": "My Tech Blog",
+      "owner": "asknagency",
+      "repo": "mycatech",
+      "branch": "main",
+      "postsDir": "posts",
+      "domain": "",
+      "themeId": "theme-682355af-ee91-4f2c-8608-dbe86eb3e253",
+      "created_at": "2026-04-23T03:00:16.546Z",
+      "modified_at": "2026-04-23T03:00:16.546Z"
+    }
+  ],
   "themes": [
     {
       "id": "theme-682355af-ee91-4f2c-8608-dbe86eb3e253",
