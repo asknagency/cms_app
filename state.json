@@ -1,6 +1,20 @@
 {
   "authors": [],
-  "targets": [],
+  "targets": [
+    {
+      "id": "target-b0f9734a-c3bb-4b2a-a31d-c8355444dc10",
+      "name": "Mycatech - tech nlog",
+      "owner": "asknagency",
+      "repo": "mycatech",
+      "branch": "main",
+      "postsDir": "posts",
+      "domain": "",
+      "themeId": "theme-d390ad27-e7c0-4db9-9a00-7a08cf7effe6",
+      "initialized": false,
+      "created_at": "2026-04-24T07:51:02.706Z",
+      "modified_at": "2026-04-24T07:51:02.706Z"
+    }
+  ],
   "themes": [
     {
       "id": "theme-d390ad27-e7c0-4db9-9a00-7a08cf7effe6",
