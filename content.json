@@ -1,5 +1,23 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "id": "post-81b3c7e3-998d-4e3e-b9a7-8928fc5ed271",
+      "title": "This is a test post",
+      "featured": false,
+      "date": "2026-04-24 21:51:02",
+      "categories": [],
+      "topics": [],
+      "featuredImage": "",
+      "authors": [],
+      "targets": [],
+      "seoTitle": "",
+      "seoDescription": "adjustment,\n- fontUrl, what if we want to have more than one font.\n- if we add a font url, are we not suppose to add the name. injecting font in html or in...",
+      "seoKeywords": "",
+      "slug": "t",
+      "status": "published",
+      "updated_at": "2026-04-24T21:54:16.235Z"
+    }
+  ],
   "categories": [],
   "tags": []
 }
