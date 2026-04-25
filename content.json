@@ -3,7 +3,7 @@
     {
       "id": "post-957f7450-ec77-4f20-808a-c0ee1f93c63b",
       "title": "We need more error boundaries  ",
-      "featured": false,
+      "featured": true,
       "date": "2026-04-25 02:44:46",
       "categories": [
         "category-e6a0b171-0f81-476e-bcdc-21efe64e98ae"
@@ -18,7 +18,7 @@
       ],
       "slug": "we-need-more-error-boundaries",
       "status": "published",
-      "updated_at": "2026-04-25T02:53:49.136Z",
+      "updated_at": "2026-04-25T02:59:20.842Z",
       "jsonPath": "content/json/post-957f7450-ec77-4f20-808a-c0ee1f93c63b.json",
       "mdPath": "content/raw/we-need-more-error-boundaries.md",
       "seo": {
