@@ -3,8 +3,8 @@ title: "We need more error boundaries  "
 date: "2026-04-25 02:44:46"
 seoDescription: "- We need more error boundaries or so, i notice we publish post without a target or theme?
 - In the post mamager, each post should have post actions like p..."
-topics: []
-categories: []
+topics: [topic-1c087624-9ef7-4214-b698-bb844a8e2591]
+categories: [category-e6a0b171-0f81-476e-bcdc-21efe64e98ae]
 ---
 
 - We need more error boundaries or so, i notice we publish post without a target or theme?
