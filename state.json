@@ -3,7 +3,16 @@
   "targets": [],
   "themes": [],
   "taxonomy": {
-    "categories": [],
+    "categories": [
+      {
+        "id": "category-e6a0b171-0f81-476e-bcdc-21efe64e98ae",
+        "title": "News",
+        "slug": "news",
+        "icon": "<svg viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" fill=\"currentColor\"><rect width=\"40\" height=\"40\" rx=\"8\"/></svg>",
+        "created_at": "2026-04-25T02:49:58.575Z",
+        "modified_at": "2026-04-25T02:49:58.575Z"
+      }
+    ],
     "topics": [
       {
         "id": "topic-1c087624-9ef7-4214-b698-bb844a8e2591",
@@ -22,10 +31,10 @@
   "stats": {
     "totalPosts": 1,
     "totalAuthors": 0,
-    "totalCategories": 0,
+    "totalCategories": 1,
     "totalTopics": 1,
     "totalThemes": 0,
-    "lastActivity": "2026-04-25T02:49:48.871Z",
+    "lastActivity": "2026-04-25T02:49:58.575Z",
     "orphanedTopics": 1
   },
   "content": {
