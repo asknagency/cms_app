@@ -1,5 +1,15 @@
 {
-  "authors": [],
+  "authors": [
+    {
+      "id": "author-008e3a04-7a0d-452a-b9bf-1f7a280ea2ed",
+      "name": "Dee James",
+      "email": "dee.james@askn.com",
+      "image": "https://picsum.photos/800/600?17",
+      "bio": "Hi,\nMy name is Dee,\nI am a passionate reporter.",
+      "created_at": "2026-04-25T09:47:00.435Z",
+      "modified_at": "2026-04-25T09:47:00.435Z"
+    }
+  ],
   "targets": [
     {
       "id": "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9",
@@ -73,11 +83,11 @@
   },
   "stats": {
     "totalPosts": 1,
-    "totalAuthors": 0,
+    "totalAuthors": 1,
     "totalCategories": 1,
     "totalTopics": 1,
     "totalThemes": 1,
-    "lastActivity": "2026-04-25T02:52:45.506Z",
+    "lastActivity": "2026-04-25T09:47:00.436Z",
     "orphanedTopics": 0
   },
   "content": {
@@ -85,7 +95,7 @@
       {
         "id": "post-957f7450-ec77-4f20-808a-c0ee1f93c63b",
         "title": "We need more error boundaries  ",
-        "featured": false,
+        "featured": true,
         "date": "2026-04-25 02:44:46",
         "categories": [
           "category-e6a0b171-0f81-476e-bcdc-21efe64e98ae"
@@ -99,8 +109,8 @@
           "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
         ],
         "slug": "we-need-more-error-boundaries",
-        "status": "draft",
-        "updated_at": "2026-04-25T02:53:20.825Z",
+        "status": "published",
+        "updated_at": "2026-04-25T02:59:20.842Z",
         "jsonPath": "content/json/post-957f7450-ec77-4f20-808a-c0ee1f93c63b.json",
         "mdPath": "content/raw/we-need-more-error-boundaries.md",
         "seo": {
