@@ -1,6 +1,20 @@
 {
   "authors": [],
-  "targets": [],
+  "targets": [
+    {
+      "id": "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9",
+      "name": "My Tech Blog",
+      "owner": "asknagency",
+      "repo": "mycatech",
+      "branch": "main",
+      "postsDir": "posts",
+      "domain": "https://asknagency.github.io/mycatech/",
+      "themeId": "theme-1f209d4c-159f-48f1-967c-74bf459b7986",
+      "initialized": false,
+      "created_at": "2026-04-25T02:52:45.506Z",
+      "modified_at": "2026-04-25T02:52:45.506Z"
+    }
+  ],
   "themes": [
     {
       "id": "theme-1f209d4c-159f-48f1-967c-74bf459b7986",
@@ -63,7 +77,7 @@
     "totalCategories": 1,
     "totalTopics": 1,
     "totalThemes": 1,
-    "lastActivity": "2026-04-25T02:52:28.471Z",
+    "lastActivity": "2026-04-25T02:52:45.506Z",
     "orphanedTopics": 0
   },
   "content": {
