@@ -10,7 +10,7 @@
       "postsDir": "posts",
       "domain": "https://asknagency.github.io/mycatech/",
       "themeId": "theme-1f209d4c-159f-48f1-967c-74bf459b7986",
-      "initialized": false,
+      "initialized": true,
       "created_at": "2026-04-25T02:52:45.506Z",
       "modified_at": "2026-04-25T02:52:45.506Z"
     }
