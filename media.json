@@ -70,7 +70,19 @@
       "location": "target",
       "targetId": "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9",
       "targetPath": "assets/455-800x600.jpg"
+    },
+    {
+      "id": "media-f60732fd-f27a-41d6-9a96-726508b29d87",
+      "name": "1000054406_avif.avif",
+      "url": "https://cdn.jsdelivr.net/gh/asknagency/cms_app@main/media/1777113850503_1000054406_avif.avif",
+      "enginePath": "media/1777113850503_1000054406_avif.avif",
+      "mimeType": "image/avif",
+      "width": 564,
+      "height": 846,
+      "size_kb": 14,
+      "uploaded_at": "2026-04-25T10:44:12.509Z",
+      "location": "engine"
     }
   ],
-  "total_size_kb": 363
+  "total_size_kb": 377
 }
