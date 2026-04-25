@@ -31,7 +31,19 @@
       "size_kb": 83,
       "uploaded_at": "2026-04-25T09:52:54.831Z",
       "location": "engine"
+    },
+    {
+      "id": "media-a3e47f4e-ef98-4ea0-9883-05cfeeacc93d",
+      "name": "535-800x600.jpg",
+      "url": "https://raw.githubusercontent.com/asknagency/cms_app/main/media/1777110890703_535-800x600.jpg",
+      "enginePath": "media/1777110890703_535-800x600.jpg",
+      "mimeType": "image/avif",
+      "width": 800,
+      "height": 600,
+      "size_kb": 45,
+      "uploaded_at": "2026-04-25T09:54:52.587Z",
+      "location": "engine"
     }
   ],
-  "total_size_kb": 178
+  "total_size_kb": 223
 }
