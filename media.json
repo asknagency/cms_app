@@ -59,14 +59,15 @@
     {
       "id": "media-eca5f445-cb7c-4a35-8dbc-98c76bf551ef",
       "name": "455-800x600.jpg",
-      "url": "https://cdn.jsdelivr.net/gh/asknagency/cms_app@main/media/1777113756362_455-800x600.jpg",
-      "enginePath": "media/1777113756362_455-800x600.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/asknagency/mycatech@main/assets/455-800x600.jpg",
       "mimeType": "image/avif",
       "width": 800,
       "height": 600,
       "size_kb": 73,
       "uploaded_at": "2026-04-25T10:42:38.442Z",
-      "location": "engine"
+      "location": "target",
+      "targetId": "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9",
+      "targetPath": "assets/455-800x600.jpg"
     }
   ],
   "total_size_kb": 363
