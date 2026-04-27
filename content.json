@@ -1,5 +1,135 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "id": "post-9eececbe-ea19-44b0-b149-01c614ca6834",
+      "title": "IPL 2026: KKR Defeats LSG in Super Over Thriller",
+      "slug": "ipl-2026-kkr-defeats-lsg-in-super-over-thriller",
+      "date": "2026-04-27 17:15:00",
+      "status": "draft",
+      "topics": [
+        "Cricket",
+        "IPL 2026"
+      ],
+      "categories": [
+        "Sports"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ],
+      "jsonPath": "content/json/post-9eececbe-ea19-44b0-b149-01c614ca6834.json",
+      "mdPath": "content/raw/ipl-2026-kkr-defeats-lsg-in-super-over-thriller.md",
+      "seo": {
+        "title": "",
+        "description": "Kolkata Knight Riders clinch a jaw-dropping super over victory against the Lucknow Super Giants at the Ekana Stadium.",
+        "keywords": ""
+      }
+    },
+    {
+      "id": "post-32cbb898-d0b7-42ac-bb5a-f78af2bd1e4f",
+      "title": "India Issues Advisory Amid Militant Attacks in Mali",
+      "slug": "india-issues-advisory-amid-militant-attacks-in-mali",
+      "date": "2026-04-27 16:30:00",
+      "status": "draft",
+      "topics": [
+        "Security",
+        "Diplomacy"
+      ],
+      "categories": [
+        "National",
+        "World"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1533036506308-568ebdb3db7d?auto=format&fit=crop&w=800&q=80",
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ],
+      "jsonPath": "content/json/post-32cbb898-d0b7-42ac-bb5a-f78af2bd1e4f.json",
+      "mdPath": "content/raw/india-issues-advisory-amid-militant-attacks-in-mali.md",
+      "seo": {
+        "title": "",
+        "description": "The Indian government has urged its nationals in Mali to stay indoors amid escalating separatist and militant attacks.",
+        "keywords": ""
+      }
+    },
+    {
+      "id": "post-8a0a4ca0-1759-4e08-b9ba-410005b8953d",
+      "title": "Al-Ahli Saudi FC Defends AFC Champions League Elite Title",
+      "slug": "al-ahli-saudi-fc-defends-afc-champions-league-elite-title",
+      "date": "2026-04-27 15:20:00",
+      "status": "draft",
+      "topics": [
+        "Football",
+        "AFC"
+      ],
+      "categories": [
+        "Sports",
+        "World"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1518605368461-1e1e11411516?auto=format&fit=crop&w=800&q=80",
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ],
+      "jsonPath": "content/json/post-8a0a4ca0-1759-4e08-b9ba-410005b8953d.json",
+      "mdPath": "content/raw/al-ahli-saudi-fc-defends-afc-champions-league-elite-title.md",
+      "seo": {
+        "title": "",
+        "description": "Al-Ahli Saudi FC secured a 1-0 victory over Machida Zelvia, successfully defending their AFC Champions League Elite crown.",
+        "keywords": ""
+      }
+    },
+    {
+      "id": "post-c21f6b73-9339-46e8-a4b1-901eb067f3ba",
+      "title": "India Dominates Junior Shooting World Cup with 16 Medals",
+      "slug": "india-dominates-junior-shooting-world-cup-with-16-medals",
+      "date": "2026-04-27 14:00:00",
+      "status": "draft",
+      "topics": [
+        "Shooting",
+        "Olympics"
+      ],
+      "categories": [
+        "Sports",
+        "National"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1595180665518-b2dc5f042eaf?auto=format&fit=crop&w=800&q=80",
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ],
+      "jsonPath": "content/json/post-c21f6b73-9339-46e8-a4b1-901eb067f3ba.json",
+      "mdPath": "content/raw/india-dominates-junior-shooting-world-cup-with-16-medals.md",
+      "seo": {
+        "title": "",
+        "description": "Indian athletes have retained their top spot in the medal tally at the Junior Shooting World Cup in Cairo, Egypt.",
+        "keywords": ""
+      }
+    },
+    {
+      "id": "post-f28b7c27-710f-4218-b57f-f545cfd15811",
+      "title": "Cannes AI Film Festival Shakes Up the Entertainment Industry",
+      "slug": "cannes-ai-film-festival-shakes-up-the-entertainment-industry",
+      "date": "2026-04-27 13:10:00",
+      "status": "draft",
+      "topics": [
+        "Cinema",
+        "AI"
+      ],
+      "categories": [
+        "Entertainment",
+        "Technology"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80",
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ],
+      "jsonPath": "content/json/post-f28b7c27-710f-4218-b57f-f545cfd15811.json",
+      "mdPath": "content/raw/cannes-ai-film-festival-shakes-up-the-entertainment-industry.md",
+      "seo": {
+        "title": "",
+        "description": "The first-ever Cannes AI Film Festival has sparked fierce debate in the industry about the future of cinema and digital artistry.",
+        "keywords": ""
+      }
+    }
+  ],
   "categories": [],
   "topics": []
 }
