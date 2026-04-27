@@ -792,23 +792,30 @@
     {
       "id": "post-news-10",
       "title": "IPL 2026: KKR Defeats LSG in Super Over Thriller",
-      "slug": "kkr-defeats-lsg-super-over-ipl-2026",
+      "featured": true,
       "date": "2026-04-27 17:15:00",
-      "status": "draft",
+      "categories": [
+        "Sports"
+      ],
       "topics": [
         "Cricket",
         "IPL 2026"
       ],
-      "categories": [
-        "Sports"
-      ],
       "featuredImage": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
+      "authors": [],
+      "targets": [],
+      "status": "draft",
+      "editCount": 0,
+      "editHistory": [],
+      "lastModifiedBy": "",
+      "slug": "kkr-defeats-lsg-super-over-ipl-2026",
+      "updated_at": "2026-04-27T03:19:29.326Z",
       "jsonPath": "content/json/post-news-10.json",
       "mdPath": "content/raw/kkr-defeats-lsg-super-over-ipl-2026.md",
       "seo": {
-        "title": "",
-        "description": "Kolkata Knight Riders clinch a jaw-dropping super over victory against the Lucknow Super Giants at the Ekana Stadium.",
-        "keywords": ""
+        "title": "IPL 2026: KKR Defeats LSG in Super Over Thriller",
+        "description": "The IPL 2026 season delivered an absolute classic last night at the Ekana Cricket Stadium in Lucknow. The **Kolkata Knight Riders (KKR)** managed to defeat...",
+        "keywords": "super, lucknow, death, bowling, season"
       }
     },
     {
