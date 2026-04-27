@@ -53,6 +53,46 @@
       "compiledCss": "themes/classic/style.css",
       "created_at": "2026-04-25T02:52:28.470Z",
       "modified_at": "2026-04-25T02:52:28.470Z"
+    },
+    {
+      "id": "theme-a876885f-0e23-439f-b7a7-93178195f115",
+      "name": "moderno",
+      "fonts": [
+        {
+          "name": "Inter",
+          "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+          "inject": "html"
+        },
+        {
+          "name": "Playfair Display",
+          "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap",
+          "inject": "html"
+        }
+      ],
+      "styleMap": {
+        "--theme-primary": "#201c87",
+        "--theme-surface": "#ffffff",
+        "--theme-font-sans": "Inter, sans-serif",
+        "--theme-font-serif": "Playfair Display, serif"
+      },
+      "files": [
+        {
+          "name": "index.html",
+          "path": "themes/moderno/index.html"
+        },
+        {
+          "name": "layout.html",
+          "path": "themes/moderno/layout.html"
+        },
+        {
+          "name": "404.html",
+          "path": "themes/moderno/404.html"
+        }
+      ],
+      "customCss": "",
+      "compiledCss": "themes/moderno/style.css",
+      "created_at": "2026-04-27T03:00:04.839Z",
+      "modified_at": "2026-04-27T03:00:04.839Z"
     }
   ],
   "taxonomy": {
@@ -87,8 +127,8 @@
     "totalAuthors": 1,
     "totalCategories": 1,
     "totalTopics": 1,
-    "totalThemes": 1,
-    "lastActivity": "2026-04-25T09:47:00.436Z",
+    "totalThemes": 2,
+    "lastActivity": "2026-04-27T03:00:04.840Z",
     "orphanedTopics": 0
   },
   "content": {
@@ -110,8 +150,8 @@
           "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
         ],
         "slug": "we-need-more-error-boundaries",
-        "status": "published",
-        "updated_at": "2026-04-25T02:59:20.842Z",
+        "status": "draft",
+        "updated_at": "2026-04-26T10:19:58.049Z",
         "jsonPath": "content/json/post-957f7450-ec77-4f20-808a-c0ee1f93c63b.json",
         "mdPath": "content/raw/we-need-more-error-boundaries.md",
         "seo": {
