@@ -52,32 +52,6 @@
       }
     },
     {
-      "id": "post-c21f6b73-9339-46e8-a4b1-901eb067f3ba",
-      "title": "India Dominates Junior Shooting World Cup with 16 Medals",
-      "slug": "india-dominates-junior-shooting-world-cup-with-16-medals",
-      "date": "2026-04-27 14:00:00",
-      "status": "draft",
-      "topics": [
-        "Shooting",
-        "Olympics"
-      ],
-      "categories": [
-        "Sports",
-        "National"
-      ],
-      "featuredImage": "https://images.unsplash.com/photo-1595180665518-b2dc5f042eaf?auto=format&fit=crop&w=800&q=80",
-      "targets": [
-        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
-      ],
-      "jsonPath": "content/json/post-c21f6b73-9339-46e8-a4b1-901eb067f3ba.json",
-      "mdPath": "content/raw/india-dominates-junior-shooting-world-cup-with-16-medals.md",
-      "seo": {
-        "title": "",
-        "description": "Indian athletes have retained their top spot in the medal tally at the Junior Shooting World Cup in Cairo, Egypt.",
-        "keywords": ""
-      }
-    },
-    {
       "id": "post-f28b7c27-710f-4218-b57f-f545cfd15811",
       "title": "Cannes AI Film Festival Shakes Up the Entertainment Industry",
       "slug": "cannes-ai-film-festival-shakes-up-the-entertainment-industry",
