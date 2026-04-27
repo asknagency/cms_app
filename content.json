@@ -26,32 +26,6 @@
       }
     },
     {
-      "id": "post-32cbb898-d0b7-42ac-bb5a-f78af2bd1e4f",
-      "title": "India Issues Advisory Amid Militant Attacks in Mali",
-      "slug": "india-issues-advisory-amid-militant-attacks-in-mali",
-      "date": "2026-04-27 16:30:00",
-      "status": "draft",
-      "topics": [
-        "Security",
-        "Diplomacy"
-      ],
-      "categories": [
-        "National",
-        "World"
-      ],
-      "featuredImage": "https://images.unsplash.com/photo-1533036506308-568ebdb3db7d?auto=format&fit=crop&w=800&q=80",
-      "targets": [
-        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
-      ],
-      "jsonPath": "content/json/post-32cbb898-d0b7-42ac-bb5a-f78af2bd1e4f.json",
-      "mdPath": "content/raw/india-issues-advisory-amid-militant-attacks-in-mali.md",
-      "seo": {
-        "title": "",
-        "description": "The Indian government has urged its nationals in Mali to stay indoors amid escalating separatist and militant attacks.",
-        "keywords": ""
-      }
-    },
-    {
       "id": "post-8a0a4ca0-1759-4e08-b9ba-410005b8953d",
       "title": "Al-Ahli Saudi FC Defends AFC Champions League Elite Title",
       "slug": "al-ahli-saudi-fc-defends-afc-champions-league-elite-title",
