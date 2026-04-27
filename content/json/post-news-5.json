@@ -32,5 +32,9 @@
       "type": "video",
       "url": "https://www.youtube.com/watch?v=3C4D5E6F7G8"
     }
-  ]
+  ],
+  "targets": [
+    "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+  ],
+  "updated_at": "2026-04-27T05:55:07.852Z"
 }
