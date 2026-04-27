@@ -1,7 +1,7 @@
 ---
 title: "IPL 2026: KKR Defeats LSG in Super Over Thriller"
 date: "2026-04-27 17:15:00"
-seoDescription: "Kolkata Knight Riders clinch a jaw-dropping super over victory against the Lucknow Super Giants at the Ekana Stadium."
+seoDescription: "The IPL 2026 season delivered an absolute classic last night at the Ekana Cricket Stadium in Lucknow. The **Kolkata Knight Riders (KKR)** managed to defeat..."
 topics: [Cricket,IPL 2026]
 categories: [Sports]
 ---
