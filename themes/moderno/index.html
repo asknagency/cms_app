@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | {{site.name}}</title>
+  <meta name="description" content="Latest updates and articles from {{site.name}}">
+  <meta property="og:title" content="Home | {{site.name}}">
+  <meta property="og:description" content="Latest updates and articles.">
+  <meta property="og:type" content="website">
+  
+  <link rel="preload" href="/style.css" as="style">
+  {{{head_inject}}}
+  {{{cms_data}}}
+
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
+
+  <header class="gsap-header sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="/" class="font-serif text-2xl font-bold tracking-tight text-gray-900">
+          {{site.name}}
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="/" class="text-gray-900 font-semibold border-b-2 border-brand-blue pb-1">Home</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">Topics</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
+          <a href="#" class="bg-brand-blue text-white px-5 py-2.5 rounded-lg hover:bg-opacity-90 transition-colors">Subscribe</a>
+      </nav>
+
+      <button class="md:hidden p-2 text-gray-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="gsap-subnav border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex gap-8 overflow-x-auto no-scrollbar py-4 text-sm font-medium text-gray-500 whitespace-nowrap">
+          <a href="/" class="text-gray-900 border-b-2 border-gray-900 pb-4 -mb-4">All Posts</a>
+          <a href="#" class="hover:text-gray-900 transition-colors">Company</a>
+          <a href="#" class="hover:text-gray-900 transition-colors">Customer Stories</a>
+          <a href="#" class="hover:text-gray-900 transition-colors">Guides</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+    <div id="post-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+      {{{post_list}}}
+    </div>
+  </main>
+
+  <footer class="gsap-footer border-t border-gray-200 mt-auto bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+        <div>
+          <h4 class="font-serif font-semibold text-gray-900 mb-6 text-lg">{{site.name}}</h4>
+          <p class="text-gray-500 pr-4">Delivering insights and stories to help you work better, from anywhere.</p>
+        </div>
+        <div>
+          <h4 class="font-serif font-semibold text-gray-900 mb-6 text-lg">About</h4>
+          <ul class="space-y-4 text-gray-600">
+            <li><a href="#" class="hover:text-brand-blue transition-colors">About us</a></li>
+            <li><a href="#" class="hover:text-brand-blue transition-colors">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-semibold text-gray-900 mb-6 text-lg">Social</h4>
+          <ul class="space-y-4 text-gray-600">
+            <li><a href="#" class="hover:text-brand-blue transition-colors">Twitter</a></li>
+            <li><a href="#" class="hover:text-brand-blue transition-colors">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-serif font-semibold text-gray-900 mb-6 text-lg">Legal</h4>
+          <ul class="space-y-4 text-gray-600">
+            <li><a href="#" class="hover:text-brand-blue transition-colors">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-brand-blue transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-gray-100 text-center text-gray-500 text-sm">
+        &copy; <script>document.write(new Date().getFullYear())</script> {{site.name}}. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+      tl.fromTo(".gsap-header", { y: -20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 })
+        .fromTo(".gsap-subnav", { y: -10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, "-=0.4");
+
+      const cards = gsap.utils.toArray('#post-grid > a');
+      cards.forEach((card) => {
+        gsap.fromTo(card, 
+          { y: 40, opacity: 0 },
+          {
+            y: 0, opacity: 1, duration: 0.8, ease: "power2.out",
+            scrollTrigger: { trigger: card, start: "top 85%", toggleActions: "play none none none" }
+          }
+        );
+      });
+
+      gsap.fromTo(".gsap-footer ul li, .gsap-footer p", 
+        { y: 15, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.5, stagger: 0.05, ease: "power2.out", scrollTrigger: { trigger: ".gsap-footer", start: "top 90%" } }
+      );
+    });
+  </script>
+</body>
+</html>
