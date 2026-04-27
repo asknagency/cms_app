@@ -959,23 +959,30 @@
     {
       "id": "post-news-3",
       "title": "Sabastian Sawe Makes History: Sub-2 Hour Marathon Achieved",
-      "slug": "sabastian-sawe-sub-2-hour-marathon",
+      "featured": true,
       "date": "2026-04-27 10:05:00",
-      "status": "draft",
+      "categories": [
+        "Sports"
+      ],
       "topics": [
         "Marathon",
         "Records"
       ],
-      "categories": [
-        "Sports"
-      ],
       "featuredImage": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80",
+      "authors": [],
+      "targets": [],
+      "status": "draft",
+      "editCount": 0,
+      "editHistory": [],
+      "lastModifiedBy": "",
+      "slug": "sabastian-sawe-sub-2-hour-marathon",
+      "updated_at": "2026-04-27T03:21:47.820Z",
       "jsonPath": "content/json/post-news-3.json",
       "mdPath": "content/raw/sabastian-sawe-sub-2-hour-marathon.md",
       "seo": {
-        "title": "",
-        "description": "Kenya's Sabastian Sawe shatters the boundaries of human endurance by running an official marathon in under two hours.",
-        "keywords": ""
+        "title": "Sabastian Sawe Makes History: Sub-2 Hour Marathon Achieved",
+        "description": "The athletic world is in awe today as Kenya’s **Sabastian Sawe** did what was once thought biologically impossible: completing an officially sanctioned mar...",
+        "keywords": "under, running, 15948, athletic, world"
       }
     },
     {
