@@ -970,13 +970,15 @@
       ],
       "featuredImage": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80",
       "authors": [],
-      "targets": [],
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ],
       "status": "draft",
       "editCount": 0,
       "editHistory": [],
       "lastModifiedBy": "",
       "slug": "sabastian-sawe-sub-2-hour-marathon",
-      "updated_at": "2026-04-27T03:21:47.820Z",
+      "updated_at": "2026-04-27T03:22:44.902Z",
       "jsonPath": "content/json/post-news-3.json",
       "mdPath": "content/raw/sabastian-sawe-sub-2-hour-marathon.md",
       "seo": {
