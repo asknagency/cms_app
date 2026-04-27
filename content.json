@@ -803,7 +803,9 @@
       ],
       "featuredImage": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
       "authors": [],
-      "targets": [],
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ],
       "status": "draft",
       "editCount": 0,
       "editHistory": [],
@@ -908,7 +910,10 @@
         "title": "",
         "description": "The first-ever Cannes AI Film Festival has sparked fierce debate in the industry about the future of cinema and digital artistry.",
         "keywords": ""
-      }
+      },
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ]
     },
     {
       "id": "post-news-5",
@@ -931,7 +936,10 @@
         "title": "",
         "description": "India and New Zealand have officially signed a comprehensive Free Trade Agreement today, promising massive boosts to bilateral trade and investments.",
         "keywords": ""
-      }
+      },
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ]
     },
     {
       "id": "post-news-4",
@@ -954,7 +962,10 @@
         "title": "",
         "description": "In a massive leap for robotics, an AI-driven machine has successfully outmatched human elite table tennis players.",
         "keywords": ""
-      }
+      },
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ]
     },
     {
       "id": "post-news-3",
@@ -1031,7 +1042,10 @@
         "title": "",
         "description": "Global oil prices surged past $106 a barrel as recent geopolitical friction disrupts the Strait of Hormuz, causing massive supply chain shifts.",
         "keywords": ""
-      }
+      },
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ]
     },
     {
       "0": {
