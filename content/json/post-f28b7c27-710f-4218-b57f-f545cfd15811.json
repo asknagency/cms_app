@@ -4,7 +4,7 @@
   "slug": "cannes-ai-film-festival-shakes-up-the-entertainment-industry",
   "date": "2026-04-27 13:10:00",
   "seoDescription": "The first-ever Cannes AI Film Festival has sparked fierce debate in the industry about the future of cinema and digital artistry.",
-  "status": "draft",
+  "status": "published",
   "topics": [
     "Cinema",
     "AI"
@@ -35,5 +35,6 @@
   ],
   "targets": [
     "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
-  ]
+  ],
+  "updated_at": "2026-04-27T08:56:46.654Z"
 }
