@@ -92,7 +92,7 @@
       "customCss": "",
       "compiledCss": "themes/moderno/style.css",
       "created_at": "2026-04-27T03:00:04.839Z",
-      "modified_at": "2026-04-27T03:00:04.839Z"
+      "modified_at": "2026-04-29T05:13:04.705Z"
     }
   ],
   "taxonomy": {
@@ -123,13 +123,13 @@
     "autoOptimizeAvif": false
   },
   "stats": {
-    "totalPosts": 1,
+    "totalPosts": 2,
     "totalAuthors": 1,
     "totalCategories": 1,
     "totalTopics": 1,
     "totalThemes": 2,
-    "lastActivity": "2026-04-27T03:00:13.384Z",
-    "orphanedTopics": 0
+    "lastActivity": "2026-04-29T05:13:04.708Z",
+    "orphanedTopics": 1
   },
   "content": {
     "posts": [
@@ -169,7 +169,7 @@
         "title": "Cannes AI Film Festival Shakes Up the Entertainment Industry",
         "slug": "cannes-ai-film-festival-shakes-up-the-entertainment-industry",
         "date": "2026-04-27 13:10:00",
-        "status": "draft",
+        "status": "published",
         "topics": [
           "Cinema",
           "AI"
@@ -182,6 +182,7 @@
         "targets": [
           "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
         ],
+        "updated_at": "2026-04-27T08:56:46.654Z",
         "jsonPath": "content/json/post-f28b7c27-710f-4218-b57f-f545cfd15811.json",
         "mdPath": "content/raw/cannes-ai-film-festival-shakes-up-the-entertainment-industry.md",
         "seo": {
