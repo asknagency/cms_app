@@ -57,30 +57,6 @@
         "description": "The first-ever Cannes AI Film Festival has sparked fierce debate in the industry about the future of cinema and digital artistry.",
         "keywords": ""
       }
-    },
-    {
-      "id": "post-ebe821fa-27be-4d06-9ac0-99923357dd46",
-      "title": "Cannes AI Film Festival Shakes Up the Entertainment Industry",
-      "slug": "cannes-ai-film-festival-shakes-up-the-entertainment-industry",
-      "date": "2026-04-27 13:10:00",
-      "status": "draft",
-      "topics": [
-        "Cinema",
-        "AI"
-      ],
-      "categories": [
-        "Entertainment",
-        "Technology"
-      ],
-      "featuredImage": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80",
-      "targets": [],
-      "jsonPath": "content/json/post-ebe821fa-27be-4d06-9ac0-99923357dd46.json",
-      "mdPath": "content/raw/cannes-ai-film-festival-shakes-up-the-entertainment-industry.md",
-      "seo": {
-        "title": "",
-        "description": "The first-ever Cannes AI Film Festival has sparked fierce debate in the industry about the future of cinema and digital artistry.",
-        "keywords": ""
-      }
     }
   ],
   "categories": [],
