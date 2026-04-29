@@ -1,7 +1,7 @@
 ---
 title: "Sabastian Sawe Makes History: Sub-2 Hour Marathon Achieved"
 date: "2026-04-27 10:05:00"
-seoDescription: "Kenya's Sabastian Sawe shatters the boundaries of human endurance by running an official marathon in under two hours."
+seoDescription: "Kenya's Sabastian Sawe makes history, clocking an incredible 1:59:48 to become the latest runner to break the sub-two-hour marathon barrier."
 topics: [Marathon,Records]
 categories: [Sports]
 ---
