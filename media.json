@@ -75,7 +75,19 @@
       "size_kb": 37,
       "uploaded_at": "2026-04-25T21:36:40.147Z",
       "location": "engine"
+    },
+    {
+      "id": "media-87f39f2e-b557-44e3-961b-b80b3976555f",
+      "name": "1000054102.jpg",
+      "url": "https://cdn.jsdelivr.net/gh/asknagency/cms_app@main/media/1777444057854_1000054102.jpg",
+      "enginePath": "media/1777444057854_1000054102.jpg",
+      "mimeType": "image/jpeg",
+      "width": 564,
+      "height": 846,
+      "size_kb": 61,
+      "uploaded_at": "2026-04-29T06:27:43.807Z",
+      "location": "engine"
     }
   ],
-  "total_size_kb": 306
+  "total_size_kb": 367
 }
