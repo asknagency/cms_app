@@ -135,7 +135,7 @@
     {
       "id": "post-3022b056-c55c-45e8-9f1b-cf0aa205ca55",
       "title": "ASI Begins Drilling into Konark Sun Temple for Restoration",
-      "featured": false,
+      "featured": true,
       "date": "2026-04-27 09:15:00",
       "categories": [
         "National",
@@ -157,13 +157,13 @@
       "editHistory": [],
       "lastModifiedBy": "",
       "slug": "asi-begins-drilling-into-konark-sun-temple-for-restoration",
-      "updated_at": "2026-04-29T06:28:04.907Z",
+      "updated_at": "2026-04-29T12:12:29.945Z",
       "jsonPath": "content/json/post-3022b056-c55c-45e8-9f1b-cf0aa205ca55.json",
       "mdPath": "content/raw/asi-begins-drilling-into-konark-sun-temple-for-restoration.md",
       "seo": {
-        "title": "ASI Begins Drilling into Konark Sun Temple for Restoration",
-        "description": "In a monumental effort to preserve India's rich heritage, the **Archaeological Survey of India (ASI)** has initiated the delicate process of drilling into...",
-        "keywords": "heritage, monumental, effort, preserve, indias"
+        "title": "Konark Sun Temple Restoration: ASI Begins Removing Ancient Sand",
+        "description": "The Archaeological Survey of India has begun removing sand from the Konark Sun Temple to restore its structural integrity. Learn about this heritage effort.",
+        "keywords": "Konark Sun Temple, ASI, India heritage, archaeological restoration, UNESCO World Heritage, structural engineering"
       }
     }
   ],
