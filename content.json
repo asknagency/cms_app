@@ -49,8 +49,56 @@
       "targets": [
         "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
       ],
-      "updated_at": "2026-04-29T06:25:16.949Z",
+      "updated_at": "2026-04-29T06:25:38.011Z",
       "jsonPath": "content/json/post-f28b7c27-710f-4218-b57f-f545cfd15811.json",
+      "mdPath": "content/raw/cannes-ai-film-festival-shakes-up-the-entertainment-industry.md",
+      "seo": {
+        "title": "",
+        "description": "The first-ever Cannes AI Film Festival has sparked fierce debate in the industry about the future of cinema and digital artistry.",
+        "keywords": ""
+      }
+    },
+    {
+      "id": "post-442bff7c-544f-412e-ad2e-af2c5bb0a5af",
+      "title": "India Dominates Junior Shooting World Cup with 16 Medals",
+      "slug": "india-dominates-junior-shooting-world-cup-with-16-medals",
+      "date": "2026-04-27 14:00:00",
+      "status": "draft",
+      "topics": [
+        "Shooting",
+        "Olympics"
+      ],
+      "categories": [
+        "Sports",
+        "National"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1595180665518-b2dc5f042eaf?auto=format&fit=crop&w=800&q=80",
+      "targets": [],
+      "jsonPath": "content/json/post-442bff7c-544f-412e-ad2e-af2c5bb0a5af.json",
+      "mdPath": "content/raw/india-dominates-junior-shooting-world-cup-with-16-medals.md",
+      "seo": {
+        "title": "",
+        "description": "Indian athletes have retained their top spot in the medal tally at the Junior Shooting World Cup in Cairo, Egypt.",
+        "keywords": ""
+      }
+    },
+    {
+      "id": "post-ebe821fa-27be-4d06-9ac0-99923357dd46",
+      "title": "Cannes AI Film Festival Shakes Up the Entertainment Industry",
+      "slug": "cannes-ai-film-festival-shakes-up-the-entertainment-industry",
+      "date": "2026-04-27 13:10:00",
+      "status": "draft",
+      "topics": [
+        "Cinema",
+        "AI"
+      ],
+      "categories": [
+        "Entertainment",
+        "Technology"
+      ],
+      "featuredImage": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80",
+      "targets": [],
+      "jsonPath": "content/json/post-ebe821fa-27be-4d06-9ac0-99923357dd46.json",
       "mdPath": "content/raw/cannes-ai-film-festival-shakes-up-the-entertainment-industry.md",
       "seo": {
         "title": "",
