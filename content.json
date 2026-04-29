@@ -117,13 +117,15 @@
       "authors": [
         "author-008e3a04-7a0d-452a-b9bf-1f7a280ea2ed"
       ],
-      "targets": [],
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ],
       "status": "draft",
       "editCount": 0,
       "editHistory": [],
       "lastModifiedBy": "",
       "slug": "sabastian-sawe-makes-history-sub-2-hour-marathon-achieved",
-      "updated_at": "2026-04-29T12:11:47.502Z",
+      "updated_at": "2026-04-29T12:12:49.579Z",
       "jsonPath": "content/json/post-0309322c-db31-451a-94ab-714e47f33938.json",
       "mdPath": "content/raw/sabastian-sawe-makes-history-sub-2-hour-marathon-achieved.md",
       "seo": {
