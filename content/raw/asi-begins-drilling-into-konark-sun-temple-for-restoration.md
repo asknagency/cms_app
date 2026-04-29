@@ -1,7 +1,7 @@
 ---
 title: "ASI Begins Drilling into Konark Sun Temple for Restoration"
 date: "2026-04-27 09:15:00"
-seoDescription: "In a monumental effort to preserve India's rich heritage, the **Archaeological Survey of India (ASI)** has initiated the delicate process of drilling into..."
+seoDescription: "The Archaeological Survey of India has begun removing sand from the Konark Sun Temple to restore its structural integrity. Learn about this heritage effort."
 topics: [Heritage,History]
 categories: [National,Culture]
 ---
