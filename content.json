@@ -108,25 +108,35 @@
     {
       "id": "post-3022b056-c55c-45e8-9f1b-cf0aa205ca55",
       "title": "ASI Begins Drilling into Konark Sun Temple for Restoration",
-      "slug": "asi-begins-drilling-into-konark-sun-temple-for-restoration",
+      "featured": false,
       "date": "2026-04-27 09:15:00",
-      "status": "draft",
-      "topics": [
-        "Heritage",
-        "History"
-      ],
       "categories": [
         "National",
         "Culture"
       ],
-      "featuredImage": "https://images.unsplash.com/photo-1590050752112-8b44c1538314?auto=format&fit=crop&w=800&q=80",
-      "targets": [],
+      "topics": [
+        "Heritage",
+        "History"
+      ],
+      "featuredImage": "https://cdn.jsdelivr.net/gh/asknagency/cms_app@main/media/1777444057854_1000054102.jpg",
+      "authors": [
+        "author-008e3a04-7a0d-452a-b9bf-1f7a280ea2ed"
+      ],
+      "targets": [
+        "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
+      ],
+      "status": "draft",
+      "editCount": 0,
+      "editHistory": [],
+      "lastModifiedBy": "",
+      "slug": "asi-begins-drilling-into-konark-sun-temple-for-restoration",
+      "updated_at": "2026-04-29T06:28:04.907Z",
       "jsonPath": "content/json/post-3022b056-c55c-45e8-9f1b-cf0aa205ca55.json",
       "mdPath": "content/raw/asi-begins-drilling-into-konark-sun-temple-for-restoration.md",
       "seo": {
-        "title": "",
-        "description": "The Archaeological Survey of India has started drilling to remove 100-year-old British-era sand from the Konark Sun Temple.",
-        "keywords": ""
+        "title": "ASI Begins Drilling into Konark Sun Temple for Restoration",
+        "description": "In a monumental effort to preserve India's rich heritage, the **Archaeological Survey of India (ASI)** has initiated the delicate process of drilling into...",
+        "keywords": "heritage, monumental, effort, preserve, indias"
       }
     }
   ],
