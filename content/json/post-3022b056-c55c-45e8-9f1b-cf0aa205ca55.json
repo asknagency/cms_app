@@ -1,0 +1,37 @@
+{
+  "id": "post-3022b056-c55c-45e8-9f1b-cf0aa205ca55",
+  "title": "ASI Begins Drilling into Konark Sun Temple for Restoration",
+  "slug": "asi-begins-drilling-into-konark-sun-temple-for-restoration",
+  "date": "2026-04-27 09:15:00",
+  "seoDescription": "The Archaeological Survey of India has started drilling to remove 100-year-old British-era sand from the Konark Sun Temple.",
+  "status": "draft",
+  "topics": [
+    "Heritage",
+    "History"
+  ],
+  "categories": [
+    "National",
+    "Culture"
+  ],
+  "featuredImage": "https://images.unsplash.com/photo-1590050752112-8b44c1538314?auto=format&fit=crop&w=800&q=80",
+  "blocks": [
+    {
+      "id": "b-2-1",
+      "type": "text",
+      "content": "In a monumental effort to preserve India's rich heritage, the **Archaeological Survey of India (ASI)** has initiated the delicate process of drilling into the historic Konark Sun Temple. The primary objective is to safely remove tons of sand that were packed into the structure's core by British administrators over a century ago to prevent its collapse.\n\n### Modern Engineering Meets Ancient Architecture\nUsing state-of-the-art non-destructive testing and endoscopic cameras, engineers are carefully mapping the internal voids. This intervention aims to restore structural stability and ensure the UNESCO World Heritage site stands tall for centuries to come.\n\n<blockquote class=\"instagram-media\" data-instgrm-permalink=\"https://www.instagram.com/p/CwX-X_qO1G-/?utm_source=ig_embed\" data-instgrm-version=\"14\"></blockquote><script async src=\"//www.instagram.com/embed.js\"></script>"
+    },
+    {
+      "id": "b-2-2",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
+      "alt": "Ancient stone carvings of the Konark Sun Temple",
+      "caption": "The intricate wheels of the Konark Sun Temple chariot."
+    },
+    {
+      "id": "b-2-3",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=1A2B3C4D5E6"
+    }
+  ],
+  "targets": []
+}
