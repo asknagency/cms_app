@@ -1,0 +1,36 @@
+{
+  "id": "post-0309322c-db31-451a-94ab-714e47f33938",
+  "title": "Sabastian Sawe Makes History: Sub-2 Hour Marathon Achieved",
+  "slug": "sabastian-sawe-makes-history-sub-2-hour-marathon-achieved",
+  "date": "2026-04-27 10:05:00",
+  "seoDescription": "Kenya's Sabastian Sawe shatters the boundaries of human endurance by running an official marathon in under two hours.",
+  "status": "draft",
+  "topics": [
+    "Marathon",
+    "Records"
+  ],
+  "categories": [
+    "Sports"
+  ],
+  "featuredImage": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80",
+  "blocks": [
+    {
+      "id": "b-3-1",
+      "type": "text",
+      "content": "The athletic world is in awe today as Kenya’s **Sabastian Sawe** did what was once thought biologically impossible: completing an officially sanctioned marathon in under two hours. Clocking in at an astounding 1:59:48, Sawe has firmly cemented his legacy in the pantheon of running legends.\n\n### Pushing Human Limits\nBenefiting from revolutionary shoe technology and a perfect pacing strategy, Sawe maintained a blistering average pace. The event, held under optimal weather conditions, marks a paradigm shift in long-distance running.\n\n<blockquote class=\"instagram-media\" data-instgrm-permalink=\"https://www.instagram.com/p/CXYZ12345/?utm_source=ig_embed\" data-instgrm-version=\"14\"></blockquote><script async src=\"//www.instagram.com/embed.js\"></script>"
+    },
+    {
+      "id": "b-3-2",
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
+      "alt": "Runners crossing a finish line",
+      "caption": "A historic day for marathon running."
+    },
+    {
+      "id": "b-3-3",
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=F1a2b3c4d5E"
+    }
+  ],
+  "targets": []
+}
