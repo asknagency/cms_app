@@ -36,28 +36,35 @@
     {
       "id": "post-f28b7c27-710f-4218-b57f-f545cfd15811",
       "title": "Cannes AI Film Festival Shakes Up the Entertainment Industry",
-      "slug": "cannes-ai-film-festival-shakes-up-the-entertainment-industry",
+      "featured": false,
       "date": "2026-04-27 13:10:00",
-      "status": "draft",
-      "topics": [
-        "Cinema",
-        "AI"
-      ],
       "categories": [
         "Entertainment",
         "Technology"
       ],
+      "topics": [
+        "Cinema",
+        "AI"
+      ],
       "featuredImage": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80",
+      "authors": [
+        "author-008e3a04-7a0d-452a-b9bf-1f7a280ea2ed"
+      ],
       "targets": [
         "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
       ],
-      "updated_at": "2026-04-29T06:25:38.011Z",
+      "status": "draft",
+      "editCount": 0,
+      "editHistory": [],
+      "lastModifiedBy": "",
+      "slug": "cannes-ai-film-festival-shakes-up-the-entertainment-industry",
+      "updated_at": "2026-04-29T12:09:44.333Z",
       "jsonPath": "content/json/post-f28b7c27-710f-4218-b57f-f545cfd15811.json",
       "mdPath": "content/raw/cannes-ai-film-festival-shakes-up-the-entertainment-industry.md",
       "seo": {
-        "title": "",
-        "description": "The first-ever Cannes AI Film Festival has sparked fierce debate in the industry about the future of cinema and digital artistry.",
-        "keywords": ""
+        "title": "Cannes AI Film Festival: The Future of Cinema?",
+        "description": "Explore how the inaugural Cannes AI Film Festival is challenging traditional filmmaking with hyper-realistic, AI-generated cinema and Silicon Valley tech.",
+        "keywords": "Cannes AI Film Festival, AI cinema, generative AI, film industry, Sora, Veo"
       }
     },
     {
