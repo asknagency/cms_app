@@ -87,7 +87,19 @@
       "size_kb": 61,
       "uploaded_at": "2026-04-29T06:27:43.807Z",
       "location": "engine"
+    },
+    {
+      "id": "media-d90bfe19-0b29-49df-80e0-38d1ce55b69b",
+      "name": "1000054102_avif.avif",
+      "url": "https://cdn.jsdelivr.net/gh/asknagency/cms_app@main/media/1777510613653_1000054102_avif.avif",
+      "enginePath": "media/1777510613653_1000054102_avif.avif",
+      "mimeType": "image/jpeg",
+      "width": 564,
+      "height": 846,
+      "size_kb": 61,
+      "uploaded_at": "2026-04-30T00:56:55.796Z",
+      "location": "engine"
     }
   ],
-  "total_size_kb": 367
+  "total_size_kb": 428
 }
