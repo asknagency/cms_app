@@ -99,19 +99,7 @@
       "size_kb": 28,
       "uploaded_at": "2026-04-30T00:57:22.326Z",
       "location": "engine"
-    },
-    {
-      "id": "media-4aa70432-7c81-4f35-8911-6d23b6925879",
-      "name": "Screenshot_2026-04-16-02-28-24-325_com.android.chrome_avif.avif",
-      "url": "https://cdn.jsdelivr.net/gh/asknagency/cms_app@main/media/1777510647515_Screenshot_2026-04-16-02-28-24-325_com.android.chrome_avif.avif",
-      "enginePath": "media/1777510647515_Screenshot_2026-04-16-02-28-24-325_com.android.chrome_avif.avif",
-      "mimeType": "image/jpeg",
-      "width": 720,
-      "height": 649,
-      "size_kb": 28,
-      "uploaded_at": "2026-04-30T00:57:29.498Z",
-      "location": "engine"
     }
   ],
-  "total_size_kb": 423
+  "total_size_kb": 395
 }
