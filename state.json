@@ -93,6 +93,101 @@
       "compiledCss": "themes/moderno/style.css",
       "created_at": "2026-04-27T03:00:04.839Z",
       "modified_at": "2026-04-29T05:13:04.705Z"
+    },
+    {
+      "id": "theme-e3d68adc-9bda-47f5-8191-8b78c1a456a7",
+      "name": "maga",
+      "fonts": [
+        {
+          "name": "Crimson Pro",
+          "url": "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap",
+          "inject": "html"
+        },
+        {
+          "name": "DM Sans",
+          "url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap",
+          "inject": "html"
+        }
+      ],
+      "styleMap": {
+        "--theme-primary": "#14b8a6",
+        "--theme-primary-dark": "#0d9488",
+        "--theme-primary-light": "#5eead4",
+        "--theme-accent": "#0891b2",
+        "--theme-accent-dark": "#0e7490",
+        "--theme-accent-light": "#67e8f9",
+        "--theme-surface": "#ffffff",
+        "--theme-surface-alt": "#f9fafb",
+        "--theme-surface-elevated": "#ffffff",
+        "--theme-text-primary": "#111827",
+        "--theme-text-secondary": "#4b5563",
+        "--theme-text-tertiary": "#9ca3af",
+        "--theme-border": "#e5e7eb",
+        "--theme-border-light": "#f3f4f6",
+        "--theme-border-dark": "#d1d5db",
+        "--theme-success": "#10b981",
+        "--theme-warning": "#f59e0b",
+        "--theme-error": "#ef4444",
+        "--theme-info": "#3b82f6",
+        "--theme-font-serif": "'Crimson Pro', Georgia, serif",
+        "--theme-font-sans": "'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "--theme-font-mono": "'Fira Code', 'Courier New', monospace",
+        "--theme-font-size-xs": "0.75rem",
+        "--theme-font-size-sm": "0.875rem",
+        "--theme-font-size-base": "1rem",
+        "--theme-font-size-lg": "1.125rem",
+        "--theme-font-size-xl": "1.25rem",
+        "--theme-font-size-2xl": "1.5rem",
+        "--theme-font-size-3xl": "1.875rem",
+        "--theme-font-size-4xl": "2.25rem",
+        "--theme-font-size-5xl": "3rem",
+        "--theme-font-size-6xl": "3.75rem",
+        "--theme-spacing-xs": "0.25rem",
+        "--theme-spacing-sm": "0.5rem",
+        "--theme-spacing-md": "1rem",
+        "--theme-spacing-lg": "1.5rem",
+        "--theme-spacing-xl": "2rem",
+        "--theme-spacing-2xl": "3rem",
+        "--theme-spacing-3xl": "4rem",
+        "--theme-radius-sm": "0.375rem",
+        "--theme-radius-md": "0.5rem",
+        "--theme-radius-lg": "0.75rem",
+        "--theme-radius-xl": "1rem",
+        "--theme-radius-2xl": "1.5rem",
+        "--theme-radius-full": "9999px",
+        "--theme-shadow-sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+        "--theme-shadow-md": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+        "--theme-shadow-lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+        "--theme-shadow-xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+        "--theme-shadow-2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+        "--theme-transition-fast": "150ms",
+        "--theme-transition-base": "300ms",
+        "--theme-transition-slow": "500ms",
+        "--theme-z-dropdown": "1000",
+        "--theme-z-sticky": "1020",
+        "--theme-z-fixed": "1030",
+        "--theme-z-modal": "1040",
+        "--theme-z-popover": "1050",
+        "--theme-z-tooltip": "1060"
+      },
+      "files": [
+        {
+          "name": "index.html",
+          "path": "themes/maga/index.html"
+        },
+        {
+          "name": "layout.html",
+          "path": "themes/maga/layout.html"
+        },
+        {
+          "name": "404.html",
+          "path": "themes/maga/404.html"
+        }
+      ],
+      "customCss": "",
+      "compiledCss": "themes/maga/style.css",
+      "created_at": "2026-05-01T20:55:51.509Z",
+      "modified_at": "2026-05-01T20:55:51.509Z"
     }
   ],
   "taxonomy": {
@@ -123,12 +218,12 @@
     "autoOptimizeAvif": false
   },
   "stats": {
-    "totalPosts": 2,
+    "totalPosts": 5,
     "totalAuthors": 1,
     "totalCategories": 1,
     "totalTopics": 1,
-    "totalThemes": 2,
-    "lastActivity": "2026-04-29T05:13:04.708Z",
+    "totalThemes": 3,
+    "lastActivity": "2026-05-01T20:55:51.510Z",
     "orphanedTopics": 1
   },
   "content": {
@@ -287,12 +382,12 @@
         "targets": [
           "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
         ],
-        "status": "draft",
+        "status": "published",
         "editCount": 0,
         "editHistory": [],
         "lastModifiedBy": "",
         "slug": "asi-begins-drilling-into-konark-sun-temple-for-restoration",
-        "updated_at": "2026-04-29T12:12:29.945Z",
+        "updated_at": "2026-04-29T12:14:08.887Z",
         "jsonPath": "content/json/post-3022b056-c55c-45e8-9f1b-cf0aa205ca55.json",
         "mdPath": "content/raw/asi-begins-drilling-into-konark-sun-temple-for-restoration.md",
         "seo": {
