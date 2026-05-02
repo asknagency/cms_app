@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | {{site.name}}</title>
+  <meta name="description" content="The page you're looking for doesn't exist or has moved.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="style.css" as="style">
+  {{{head_inject}}}
+
+  <style>
+    /* ─── Base ───────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      background-color: #fafaf8;
+      color: #111827;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+
+    /* ─── Grid paper background ─────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(32, 28, 135, 0.032) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(32, 28, 135, 0.032) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── Huge "404" watermark ──────────────────────────────── */
+    .num-bg {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .num-bg span {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(14rem, 40vw, 28rem);
+      line-height: 1;
+      color: transparent;
+      -webkit-text-stroke: 1.5px rgba(32, 28, 135, 0.08);
+      user-select: none;
+      letter-spacing: -0.04em;
+    }
+
+    /* ─── Floating accent blobs ─────────────────────────────── */
+    .blob {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(72px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.35;
+    }
+    .blob-1 {
+      width: 420px; height: 420px;
+      background: #ddd8ff;
+      top: -80px; left: -100px;
+      animation: drift 18s ease-in-out infinite alternate;
+    }
+    .blob-2 {
+      width: 280px; height: 280px;
+      background: #c7d2fe;
+      bottom: 40px; right: -60px;
+      animation: drift 24s ease-in-out infinite alternate-reverse;
+    }
+    .blob-3 {
+      width: 180px; height: 180px;
+      background: #e0e7ff;
+      top: 55%; left: 60%;
+      animation: drift 14s ease-in-out infinite alternate;
+    }
+    @keyframes drift {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(30px, -30px) scale(1.08); }
+    }
+
+    /* ─── Content wrapper ───────────────────────────────────── */
+    .content-wrap {
+      position: relative;
+      z-index: 10;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    /* ─── Error code pill ───────────────────────────────────── */
+    .error-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #201c87;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.45rem 1rem;
+      border-radius: 9999px;
+      margin-bottom: 2rem;
+    }
+    .error-pill::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #818cf8;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.5; transform: scale(0.7); }
+    }
+
+    /* ─── Main headline ─────────────────────────────────────── */
+    .headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.25rem, 6vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: #111827;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+      max-width: 600px;
+    }
+
+    /* ─── Sub copy ──────────────────────────────────────────── */
+    .sub-copy {
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      color: #6b7280;
+      line-height: 1.7;
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ─── Search box ────────────────────────────────────────── */
+    .search-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 460px;
+      margin-bottom: 2.5rem;
+    }
+    .search-icon {
+      position: absolute;
+      left: 1.1rem; top: 50%;
+      transform: translateY(-50%);
+      width: 1.1rem; height: 1.1rem;
+      color: #9ca3af;
+      pointer-events: none;
+    }
+    .search-input {
+      width: 100%;
+      padding: 1rem 1rem 1rem 3rem;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 0.75rem;
+      background: #fff;
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-size: 0.9375rem;
+      color: #111827;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .search-input:focus {
+      border-color: #201c87;
+      box-shadow: 0 0 0 4px rgba(32, 28, 135, 0.1), 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .search-input::placeholder { color: #d1d5db; }
+
+    /* ─── Action buttons ────────────────────────────────────── */
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.875rem;
+      justify-content: center;
+      margin-bottom: 3.5rem;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: #201c87; color: #fff;
+      padding: 0.875rem 2rem;
+      border-radius: 0.75rem;
+      font-weight: 600; font-size: 0.9375rem;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(32, 28, 135, 0.35);
+      transition: all 0.25s ease;
+    }
+    .btn-primary:hover {
+      background: #1a1773;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(32, 28, 135, 0.45);
+    }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: #fff; color: #374151;
+      padding: 0.875rem 2rem;
+      border-radius: 0.75rem;
+      font-weight: 600; font-size: 0.9375rem;
+      text-decoration: none;
+      border: 1.5px solid #e5e7eb;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: all 0.25s ease;
+    }
+    .btn-secondary:hover {
+      border-color: #201c87;
+      color: #201c87;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    /* ─── Quick links ───────────────────────────────────────── */
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem 1.25rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid #f3f4f6;
+      max-width: 520px;
+    }
+    .quick-links-label {
+      width: 100%;
+      text-align: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #d1d5db;
+      margin-bottom: 0.75rem;
+    }
+    .quick-link {
+      font-size: 0.875rem;
+      color: #6b7280;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.35rem 0.75rem;
+      border-radius: 0.5rem;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+    }
+    .quick-link:hover {
+      color: #201c87;
+      background: #f1f0fd;
+      border-color: #ddd8ff;
+    }
+
+    /* ─── Minimal footer ────────────────────────────────────── */
+    .page-footer {
+      position: relative; z-index: 10;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #d1d5db;
+    }
+    .page-footer a { color: #9ca3af; text-decoration: none; }
+    .page-footer a:hover { color: #201c87; }
+
+    /* ─── Entry animation ───────────────────────────────────── */
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .anim { animation: fade-up 0.7s cubic-bezier(0.4, 0, 0.2, 1) both; }
+    .anim-1 { animation-delay: 0.05s; }
+    .anim-2 { animation-delay: 0.15s; }
+    .anim-3 { animation-delay: 0.25s; }
+    .anim-4 { animation-delay: 0.35s; }
+    .anim-5 { animation-delay: 0.45s; }
+    .anim-6 { animation-delay: 0.55s; }
+  </style>
+</head>
+<body>
+
+  <!-- Background watermark "404" -->
+  <div class="num-bg" aria-hidden="true">
+    <span>404</span>
+  </div>
+
+  <!-- Ambient blobs -->
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="blob blob-3" aria-hidden="true"></div>
+
+  <!-- Main content -->
+  <main class="content-wrap">
+
+    <!-- Error status pill -->
+    <div class="error-pill anim anim-1" role="status">
+      Error 404 — Page not found
+    </div>
+
+    <!-- Headline -->
+    <h1 class="headline anim anim-2">
+      We've lost this page
+    </h1>
+
+    <!-- Sub copy -->
+    <p class="sub-copy anim anim-3">
+      The content you're looking for doesn't exist, has been moved, or
+      you might have followed a broken link. Let's get you somewhere good.
+    </p>
+
+    <!-- Search box -->
+    <div class="search-wrap anim anim-4">
+      <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+      </svg>
+      <input
+        class="search-input"
+        type="search"
+        placeholder="Search for stories, topics, or people…"
+        aria-label="Search the blog"
+      />
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-group anim anim-5">
+      <a href="/" class="btn-primary">
+        <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+        </svg>
+        Go to homepage
+      </a>
+      <a href="#" class="btn-secondary">
+        <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+        Contact support
+      </a>
+    </div>
+
+    <!-- Quick links -->
+    <nav class="quick-links anim anim-6" aria-label="Quick links">
+      <span class="quick-links-label">Or jump to</span>
+      <a href="/"  class="quick-link">Latest stories</a>
+      <a href="#"  class="quick-link">About</a>
+      <a href="#"  class="quick-link">Podcast</a>
+      <a href="#"  class="quick-link">Topics</a>
+      <a href="#"  class="quick-link">Newsletter</a>
+    </nav>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <p>
+      &copy; <script>document.write(new Date().getFullYear())</script>
+      <a href="/">{{site.name}}</a>.
+      All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
