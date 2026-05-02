@@ -188,6 +188,34 @@
       "compiledCss": "themes/maga/style.css",
       "created_at": "2026-05-01T20:55:51.509Z",
       "modified_at": "2026-05-01T20:55:51.509Z"
+    },
+    {
+      "id": "theme-2f6388a9-165d-4702-8763-5cd0410c2c97",
+      "name": "stet",
+      "fonts": [],
+      "styleMap": {
+        "--theme-primary": "#14b8a6",
+        "--theme-surface": "#ffffff",
+        "--theme-font": "Inter, sans-serif"
+      },
+      "files": [
+        {
+          "name": "index.html",
+          "path": "themes/stet/index.html"
+        },
+        {
+          "name": "layout.html",
+          "path": "themes/stet/layout.html"
+        },
+        {
+          "name": "404.html",
+          "path": "themes/stet/404.html"
+        }
+      ],
+      "customCss": "",
+      "compiledCss": "themes/stet/style.css",
+      "created_at": "2026-05-02T19:07:40.919Z",
+      "modified_at": "2026-05-02T19:07:40.919Z"
     }
   ],
   "taxonomy": {
@@ -222,8 +250,8 @@
     "totalAuthors": 1,
     "totalCategories": 1,
     "totalTopics": 1,
-    "totalThemes": 3,
-    "lastActivity": "2026-05-01T20:55:58.773Z",
+    "totalThemes": 4,
+    "lastActivity": "2026-05-02T19:07:40.921Z",
     "orphanedTopics": 1
   },
   "content": {
