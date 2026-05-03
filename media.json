@@ -87,16 +87,7 @@
       "size_kb": 61,
       "uploaded_at": "2026-04-29T06:27:43.807Z",
       "location": "engine"
-    },
-    {
-      "id": "media-1c56bfe3-c736-4583-9a1e-6985f4550af6",
-      "name": {
-        "isTrusted": true,
-        "_vts": 1777778312520
-      },
-      "size_kb": null,
-      "created_at": "2026-05-03T03:18:32.521Z"
     }
   ],
-  "total_size_kb": null
+  "total_size_kb": 0
 }
