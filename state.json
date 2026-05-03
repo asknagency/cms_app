@@ -187,7 +187,8 @@
       "customCss": "",
       "compiledCss": "themes/maga/style.css",
       "created_at": "2026-05-01T20:55:51.509Z",
-      "modified_at": "2026-05-01T20:55:51.509Z"
+      "modified_at": "2026-05-03T03:32:00.970Z",
+      "themeVersion": "2026-05-03T03:32:00.970Z"
     },
     {
       "id": "theme-2f6388a9-165d-4702-8763-5cd0410c2c97",
@@ -251,7 +252,7 @@
     "totalCategories": 1,
     "totalTopics": 1,
     "totalThemes": 4,
-    "lastActivity": "2026-05-03T03:31:43.053Z",
+    "lastActivity": "2026-05-03T03:32:00.970Z",
     "orphanedTopics": 1
   },
   "content": {
