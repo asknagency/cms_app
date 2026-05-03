@@ -346,19 +346,20 @@
         "targets": [
           "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9"
         ],
+        "seoTitle": "AI Robotic Arm Defeats Human Champions in Table Tennis",
+        "seoDescription": "Discover how a new AI-powered robotic arm is revolutionizing real-time agility by defeating top-ranked human players at table tennis using predictive tech.",
+        "seoKeywords": "AI, robotics, table tennis, artificial intelligence, machine learning, robotic arm",
         "status": "published",
         "editCount": 0,
         "editHistory": [],
         "lastModifiedBy": "",
         "slug": "ai-powered-robot-defeats-elite-table-tennis-champions",
-        "updated_at": "2026-05-03T03:13:36.103Z",
+        "updated_at": "2026-05-03T03:33:12.712Z",
+        "themeSnapshotAt": {
+          "target-77c5d894-2fce-4b0b-bf8d-d398bc72abf9": "2026-05-03T03:32:00.970Z"
+        },
         "jsonPath": "content/json/post-64a90e68-f4e5-41f7-90ce-c853c010a914.json",
-        "mdPath": "content/raw/ai-powered-robot-defeats-elite-table-tennis-champions.md",
-        "seo": {
-          "title": "AI Robotic Arm Defeats Human Champions in Table Tennis",
-          "description": "Discover how a new AI-powered robotic arm is revolutionizing real-time agility by defeating top-ranked human players at table tennis using predictive tech.",
-          "keywords": "AI, robotics, table tennis, artificial intelligence, machine learning, robotic arm"
-        }
+        "mdPath": "content/raw/ai-powered-robot-defeats-elite-table-tennis-champions.md"
       },
       {
         "id": "post-0309322c-db31-451a-94ab-714e47f33938",
